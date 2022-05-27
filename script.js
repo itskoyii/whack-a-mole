@@ -57,6 +57,7 @@ function timer(seconds) {
   // every single second, display the amount of time left
   countdown = setInterval(() => {
       const secondsLeft = Math.round((then - Date.now())/1000);
+      timerDisplay.value = `${secondsLeft}`;
 
       // check if we should stop it
       if (secondsLeft < 0) {
@@ -90,7 +91,7 @@ function startTimer() {
   timeUp = false;
   score = 0;
   peep();
-  setTimeout(() => timeUp = true, 15000)  // pass the 15 seconds data-time here
+  setTimeout(() => timeUp = true, seconds*1000)  // pass the 15 seconds data-time here
 }
 
 document.querySelector('.startBtn').addEventListener('click', startTimer);
