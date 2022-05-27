@@ -29,14 +29,6 @@ function peep() {
   }, time);
 }
 
-// function startGame() {
-//   scoreBoard.textContent = 0;
-//   timeUp = false;
-//   score = 0;
-//   peep();
-//   setTimeout(() => timeUp = true, 10000)
-// }
-
 function bonk(e) {
   score++;
   this.parentNode.classList.remove('up');
