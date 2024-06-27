@@ -1,4 +1,4 @@
 # whack-a-mole game
 
-See live link below:
+See live link ->
 https://koyiswhackamole.netlify.app/
